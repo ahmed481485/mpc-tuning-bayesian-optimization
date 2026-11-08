@@ -33,21 +33,7 @@ def is_upright(theta, h):
 
 
 def mpc_loop(Q_array, R, N_horizon, max_sim_time):
-    """
-    Build the do-mpc model / controller / simulator and run one
-    closed-loop episode of inverted-pendulum swing-up.
 
-    Parameters
-    ----------
-    Q_array      : array-like (4,) – state cost weights [q1, q2, q3, q4]
-    R            : float           – input cost weight
-    N_horizon    : int             – MPC prediction horizon
-    max_sim_time : float           – episode time limit [s]
-
-    Returns
-    -------
-    mpc.data – do-mpc data object with the closed-loop trajectory
-    """
     np.random.seed(42)
 
     # ── Model ───────────────────────────────────────────────

@@ -46,7 +46,7 @@ DIMENSIONS = {
         'n_init': 5, 'n_iter': 25, 'init': 'grid',
     },
     2: {
-        'params': {'time': ['q1', 'q3'], 'effort': ['q1', 'q3'], 'combined': ['q3', 'R']},
+        'params': {'time': ['q1', 'q3'], 'effort': ['q3', 'R'], 'combined': ['q3', 'R']},
         'n_init': 10, 'n_iter': 65, 'init': 'sobol',
     },
     5: {
